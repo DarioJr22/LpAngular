@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'LpAngular';
 
-  test = [1,2,3,4]
+  interesses:string[] = ['Ed. Financeira','Investimentos','Inteligencia Emocional', 'PNL','Matemática', 'Programação']
+
+  Data:String = "22 de Outubro" 
 }

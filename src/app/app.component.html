@@ -1,45 +1,58 @@
-<header id = "Descricao-iniciativa">
-    <div>
-      <h1>Equilibre-se</h1>
-        <p>
-         Um evento para revolucionar a sua vida
-        </p>
-        <p>Data:</p>
-    </div>
-    <div id="formulario-Inscricao">
-      <p>Preencha o formulário para receber os detalhes do evento</p>
-      <form>
-        <div class="form-group">
-          <label for="name">Nome</label>
-          <input type="text" name="name" placeholder="Digite seu nome">
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" 
-          name="name" placeholder="Digite seu melhor email">
-        </div>
-        <div class="form-group">
-          <label for="phone">Telefone</label>
-          <input type="text" 
-          name="phone" placeholder="Numero do seu zap">
-        </div>
-        <div class="form-group">
-          <label for="email">Nome</label>
-          <input type="email" 
-          name="name" placeholder="Digite seu melhor email">
-        </div>
-        
-        <div class = "form-group">
-          <label for="interesses">Principais interesses</label>
-          <select name="interesses">
-            <option value = "Ed. Financeira">Ed. Financeira</option>
-            <option value = "Inteligencia Em">Inteligencia Em</option>
-            <option value = "Investimento">Investimento</option>
-          </select>
-        </div>
+<header id="event-subscription">
+  <div id="disclaimer">
+    <b><h2>Be a Champ !</h2></b>
+    <p class="about-event">Um evento para revolucionar a sua vida</p>
 
-        <input type="submit" value="Quero me inscrever">
-        
-      </form>
-    </div>
+    <p>Data:</p>
+    <p class="event-date">Domingo dia {{Data}} </p>
+  </div>
+  <div id="subscription-form">
+    <p>Preencha o formulário para receber os detalhes do evento</p>
+    <form>
+      <div class="form-group">
+        <label for="name">Nome</label>
+        <input type="text" name="name" placeholder="Digite seu nome" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="name" placeholder="Digite seu melhor email" />
+      </div>
+      <div class="form-group">
+        <label for="phone">Telefone</label>
+        <input type="text" name="phone" placeholder="Numero do seu zap" />
+      </div>
+      <div class="form-group">
+        <label for="email">Nome</label>
+        <input type="email" name="name" placeholder="Digite seu melhor email" />
+      </div>
+
+      <div class="form-group">
+        <label for="interesses">Principais interesses </label>
+        <select name="interesses">
+          <option *ngFor="let i of interesses; index as y" value="i">
+            {{ y + 1 }} - {{ i }}
+          </option>
+        </select>
+      </div>
+      <input type="submit"class ="btn" value="Quero me inscrever" />
+    </form>
+  </div>
 </header>
+
+<section id="key-benefits">
+  <h2>Oque você vai aprender ?</h2>
+  <div class="benefits">
+    <div class="benefit">
+      <div id="benefit-1" class="benefit-img"></div>
+      <p>Temas Chave para seu crescimento pessoal e profissional.</p>
+    </div>
+    <div class="benefit">
+      <div id="benefit-2" class="benefit-img"></div>
+      <p>Temas Chave para seu crescimento pessoal e profissional.</p>
+    </div>
+    <div class="benefit">
+      <div id="benefit-3" class="benefit-img"></div>
+      <p>Temas Chave para seu crescimento pessoal e profissional.</p>
+    </div>
+  </div>
+</section>

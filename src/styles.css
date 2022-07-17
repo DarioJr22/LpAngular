@@ -10,11 +10,12 @@ h1{
 }
 
 :root{
-    --primary:#1b038a;
-    --secondary:#2a039c;
-    --text-color:#d8d7db;
-    --text-secondary:#9895ed;
-    --text-tertiary:#9895ed;
+    --primary:#471eff;
+    --secondary:#95989a;
+    --formbackg:#9b9b9b;
+    --text-color:#e9e1e1;
+    --text-secondary:#2c2a2a;
+    --text-tertiary:#5b5b5c;
 }
 
 *{
@@ -24,3 +25,103 @@ h1{
     box-sizing: border-box;
 
 }
+
+/*Event Form*/
+
+#event-subscription{
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
+    url(./assets/img/hrz-1.jpg);
+    height: 85vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color)
+ /*    background-position: top;
+    background-size: cover; */
+}
+
+#disclaimer h2,
+#disclaimer .event-date {
+    margin-top: 0%;
+    color: var(--primary);
+    font-weight: bold;
+    
+}
+
+#disclaimer h2{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+#disclaimer .event-date{
+    font-weight: bold;
+}
+
+#disclaimer .about-event{
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom:1em ;
+}
+
+
+#disclaimer .p{
+    font-size: 1.2em;
+    margin-bottom: .3em ;
+}
+
+#subscription-form{
+    background-color: var(--formbackg);
+    padding: 2em;
+    max-width: 22%;
+    
+}
+
+#subscription-form p {
+    font-size: 1.5em;
+    color:var(--text-secondary);
+    margin-top: 3em;
+    margin-bottom: 0.2em;
+    font-weight: bold;
+    
+}
+.form-group label{
+
+    font-size: 1.5em;
+    color:var(--text-secondary);
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.form-group input,
+.form-group select{
+    padding: 6px 7px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+
+}
+
+.btn{
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+
+}
+/* 
+.btn:hover{
+    opacity: 2;
+}
+ */
+
